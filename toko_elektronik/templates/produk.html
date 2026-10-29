@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block judul %}Produk - Toko Elektronik{% endblock %}
+
+{% block isi %}
+<h1>Daftar Produk</h1>
+
+<div class="daftar-produk">
+    {% for id, p in daftar.items() %}
+    <div class="card">
+        <span class="label">{{ p.kategori }}</span>
+        <h3>{{ p.nama }}</h3>
+        <p class="harga">Rp {{ "{:,}".format(p.harga).replace(",", ".") }}</p>
+        <a class="tombol" href="{{ url_for('detail_produk', id=id) }}">Lihat Detail</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

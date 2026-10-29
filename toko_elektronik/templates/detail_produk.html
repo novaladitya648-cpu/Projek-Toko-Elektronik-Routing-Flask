@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block judul %}{{ p.nama }} - Toko Elektronik{% endblock %}
+
+{% block isi %}
+<div class="card detail">
+    <span class="label">{{ p.kategori }}</span>
+    <h1>{{ p.nama }}</h1>
+    <p>ID Produk: {{ id }}</p>
+    <p>{{ p.deskripsi }}</p>
+    <p class="harga">Rp {{ "{:,}".format(p.harga).replace(",", ".") }}</p>
+    <a class="tombol" href="{{ url_for('produk') }}">Kembali ke Produk</a>
+</div>
+{% endblock %}

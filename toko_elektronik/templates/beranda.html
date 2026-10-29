@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block judul %}Beranda - Toko Elektronik{% endblock %}
+
+{% block isi %}
+<h1>Selamat Datang di Toko Elektronik</h1>
+<p>Kami menjual berbagai HP dan laptop dengan harga terjangkau.</p>
+<a class="tombol" href="{{ url_for('produk') }}">Lihat Produk</a>
+
+<h2>Cek Username</h2>
+<p>Coba cek username pelanggan atau member:</p>
+<ul>
+    <li><a href="{{ url_for('cek_username', username='andi') }}">Cek username "andi"</a></li>
+    <li><a href="{{ url_for('cek_username', username='rina') }}">Cek username "rina"</a></li>
+    <li><a href="{{ url_for('user', username='citra') }}">Lihat profil "citra"</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block judul %}Toko Elektronik{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="{{ url_for('beranda') }}">Toko Elektronik</a>
+        <div class="menu">
+            <a href="{{ url_for('beranda') }}">Beranda</a>
+            <a href="{{ url_for('tentang') }}">Tentang</a>
+            <a href="{{ url_for('produk') }}">Produk</a>
+            <a href="{{ url_for('kontak') }}">Kontak</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block isi %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Toko Elektronik - Tugas Individu 5 PSBW</p>
+    </footer>
+</body>
+</html>

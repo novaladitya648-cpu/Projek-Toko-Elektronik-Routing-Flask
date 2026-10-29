@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block judul %}Cek Username - Toko Elektronik{% endblock %}
+
+{% block isi %}
+<h1>Cek Username</h1>
+
+<div class="pesan {{ status }}">
+    <p>Username <b>{{ username }}</b></p>
+    <p>{{ pesan }}</p>
+</div>
+
+<a class="tombol" href="{{ url_for('beranda') }}">Kembali ke Beranda</a>
+{% endblock %}

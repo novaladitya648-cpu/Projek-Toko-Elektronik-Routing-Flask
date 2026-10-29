@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block judul %}404 - Halaman Tidak Ditemukan{% endblock %}
+
+{% block isi %}
+<div class="error-404">
+    <h1>404</h1>
+    <h2>Halaman tidak ditemukan</h2>
+    <p>Maaf, halaman atau produk yang kamu cari tidak ada.</p>
+    <a class="tombol" href="{{ url_for('beranda') }}">Kembali ke Beranda</a>
+</div>
+{% endblock %}

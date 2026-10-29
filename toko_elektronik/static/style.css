@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Isi halaman */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    min-height: 400px;
+}
+
+/* Tombol */
+.tombol {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.tombol:hover {
+    background-color: #1f6391;
+}
+
+/* Card produk */
+.daftar-produk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    width: 250px;
+}
+
+.card.detail {
+    width: auto;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.label {
+    background-color: #ecf0f1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.harga {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Pesan cek username */
+.pesan {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.pesan.tersedia {
+    background-color: #d5f5e3;
+    border: 1px solid #27ae60;
+}
+
+.pesan.dipakai {
+    background-color: #fdebd0;
+    border: 1px solid #e67e22;
+}
+
+.pesan.error {
+    background-color: #fadbd8;
+    border: 1px solid #c0392b;
+}
+
+/* Halaman 404 */
+.error-404 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.error-404 h1 {
+    font-size: 80px;
+    margin: 0;
+    color: #c0392b;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
